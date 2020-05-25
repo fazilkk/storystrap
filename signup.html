@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Library</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css\signup.css">
+    <style>
+        a {
+            color: white;
+        }
+        
+        .myButton {
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+            background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+            background-color: #33bdef;
+            border-radius: 6px;
+            border: 1px solid #057fd0;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px -1px 0px #5b6178;
+        }
+        
+        .myButton:hover {
+            background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+            background-color: #019ad2;
+        }
+        
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+        /* Solid border */
+        
+        hr.solid {
+            border-top: 0.5px solid #bbb;
+        }
+        
+        .label {
+            color: white;
+            padding: 3px;
+            font-family: 'Roboto Condensed';
+            font-weight: bold;
+        }
+        
+        .other {
+            background-color: #e7e7e7;
+            color: white;
+        }
+        /* Gray */
+    </style>
+</head>
+
+<body>
+
+    <header style="background-color: #111265">
+        <div class="container-fluid" style="font-family: 'Roboto Condensed'; color: white; padding-top: 15px; padding-left: 80px">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-unstyled" id="head">
+                        <li class="list-item list-inline-item" style="padding-right: 15px">
+                            <a href=#>HOME</a>
+                        </li>
+                        <li class="list-item list-inline-item" style="padding-right: 15px">
+                            <a href=#>SIGN UP</a>
+                        </li>
+                        <li class="list-item list-inline-item" style="padding-right: 15px">
+                            <a href=#>SIGN IN</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section style="background-color: #ededed" class="pb-5">
+        <!-- div class="edge-header deep-purple" style="background-color: ##000144" -->
+        <div style="background-color: #000144;">
+            <div class="container-fluid" style="font-family: 'Roboto Condensed'; color: white; padding-top: 80px; padding-bottom:150px;  padding-left: 80px; padding-right: 100px;">
+                <strong><div class="row">
+						<div class="col-md-6">
+							<h1>
+							   Library
+							</h1>
+						</div>
+						<div class="col-md-6 rectangle" style="background-color: #111265; padding-right: 80px" >
+						</div>
+					</div>
+					</strong>
+            </div>
+        </div>
+        <form action="index.html" class="login" onsubmit="return validate ()">
+            <br>
+            <h2>Create a new Account</h2>
+            <br>
+
+            <div class="login-cont">
+                <label> What is your name?</label>
+                <br>
+                <input type="text" placeholder="Ex:Mohammed Fazil">
+
+            </div>
+            <div class="login-cont">
+                <br>
+                <label>Enter your email address </label>
+                <br>
+                <input type="text" placeholder="Ex:fazil@gmail.com" id="email">
+                <label for="error" id="error"> </label>
+            </div>
+            <div class="login-cont">
+                <br>
+                <label>What is your date of birth?</label>
+                <br>
+                <input type="text" placeholder="dd/mm/yyyy">
+
+            </div>
+            <div class="login-cont">
+                <br>
+                <label for="pn"> Enter your phone number (format: xxxx-xxx-xxxx):</label>
+                <br>
+                <input type="tel" data-validate="pn" pattern="^\d{4}-\d{3}-\d{4}$" placeholder="Ex:+918891983480" id="pn">
+            </div>
+            <div class="login-cont">
+                <br>
+                <label> What is your gender?</label>
+                <br>
+                <input type="text" placeholder="Ex:Male">
+            </div>
+            <div class="login-cont">
+                <br>
+                <label> User name</label>
+                <br>
+                <input type="text" placeholder="fazil">
+            </div>
+            <div class="login-cont">
+                <br>
+                <label>Choose a password</label>
+                <br>
+                <input type="password" placeholder="Enter your Password" id="pwd">
+                <label for="error" id="error"> </label>
+
+            </div>
+
+            <div class="login-cont">
+                <br>
+                <label>Verify your password</label>
+                <br>
+                <input type="text" placeholder=" Re-enter your Password">
+            </div>
+            <div id="submit">
+                <br>
+
+                <input type="submit" value="Sign Up">
+                <br>
+            </div>
+
+            <!-- <!-- <div class="login-missc">
+                <br>
+                <h5> Already have an Account? </h5>
+
+
+                <!-- <input type="C:\Users\MOHAMMED FAZIL KK\Desktop\tourism websit\profile.html" value="Sign In"> -->
+            <!-- <a href="C:\Users\MOHAMMED FAZIL KK\Desktop\tourism websit\profile.html"> Sign In</a>
+
+
+            </div>  -->
+
+        </form>
+
+        </div>
+
+
+
+
+    </section>
+    <section style="background-color: #ededed;" class="pb-5">
+        <h3 style="font-family: 'Roboto Condensed'; color: #adadad; margin-left: 430px;"><strong>Follow Us</strong></h3>
+        <img src="images (39).jpeg" height="24px" width="180px" style="margin-left: 430px;" />
+    </section>
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>
